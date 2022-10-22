@@ -506,7 +506,7 @@ def ExportObjBBData(data):
     s = ""
     for itm in data:
         itm = [ i if isinstance(i, str) else str(i) for i in itm]
-        s += ",".join(itm)
+        s += "|".join(itm)
         s += "\n"
     file.write(s)
     file.close()
